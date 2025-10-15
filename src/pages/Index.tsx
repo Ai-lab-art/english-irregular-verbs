@@ -24,12 +24,12 @@ const Index = () => {
             <DownloadButton />
           </div>
           <p className="text-muted-foreground leading-relaxed">
-            This comprehensive chart contains 240+ common English irregular verbs with all their forms (V1-V5),
+            This comprehensive chart contains 343+ common English irregular verbs with all their forms (V1-V5),
             pronunciation guides, and Nepali translations. Use the search bar to quickly find any verb you're
             looking for. Download the complete PDF reference for offline study. Perfect for students, teachers, and language learners!
           </p>
           <p className="text-muted-foreground mt-2 leading-relaxed">
-            यो तालिकामा २४० भन्दा बढी अंग्रेजी अनियमित क्रियाहरू तिनीहरूका सबै रूपहरू (V1-V5), उच्चारण र नेपाली अर्थ सहित
+            यो तालिकामा ३४३ भन्दा बढी अंग्रेजी अनियमित क्रियाहरू तिनीहरूका सबै रूपहरू (V1-V5), उच्चारण र नेपाली अर्थ सहित
             समावेश छन्। अफलाइन अध्ययनको लागि सम्पूर्ण PDF डाउनलोड गर्नुहोस्।
           </p>
         </div>
