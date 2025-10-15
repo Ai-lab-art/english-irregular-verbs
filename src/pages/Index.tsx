@@ -1,4 +1,5 @@
 import { VerbTable } from "@/components/VerbTable";
+import { DownloadButton } from "@/components/DownloadButton";
 import { BookOpen } from "lucide-react";
 
 const Index = () => {
@@ -18,15 +19,18 @@ const Index = () => {
 
       <main className="container mx-auto max-w-7xl px-4 py-8">
         <div className="mb-6 bg-card p-6 rounded-lg border border-border shadow-sm">
-          <h2 className="text-xl font-semibold mb-2 text-foreground">About Irregular Verbs</h2>
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
+            <h2 className="text-xl font-semibold text-foreground">About Irregular Verbs</h2>
+            <DownloadButton />
+          </div>
           <p className="text-muted-foreground leading-relaxed">
-            This comprehensive chart contains over 140 common English irregular verbs with all their forms (V1-V5),
+            This comprehensive chart contains 240+ common English irregular verbs with all their forms (V1-V5),
             pronunciation guides, and Nepali translations. Use the search bar to quickly find any verb you're
-            looking for. Perfect for students, teachers, and language learners!
+            looking for. Download the complete PDF reference for offline study. Perfect for students, teachers, and language learners!
           </p>
           <p className="text-muted-foreground mt-2 leading-relaxed">
-            यो तालिकामा १४० भन्दा बढी अंग्रेजी अनियमित क्रियाहरू तिनीहरूका सबै रूपहरू (V1-V5), उच्चारण र नेपाली अर्थ सहित
-            समावेश छन्।
+            यो तालिकामा २४० भन्दा बढी अंग्रेजी अनियमित क्रियाहरू तिनीहरूका सबै रूपहरू (V1-V5), उच्चारण र नेपाली अर्थ सहित
+            समावेश छन्। अफलाइन अध्ययनको लागि सम्पूर्ण PDF डाउनलोड गर्नुहोस्।
           </p>
         </div>
 
