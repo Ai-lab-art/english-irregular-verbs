@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import { Input } from "@/components/ui/input";
-import { Search } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Search, X } from "lucide-react";
 import { irregularVerbs, type IrregularVerb } from "@/data/irregularVerbs";
 
 export const VerbTable = () => {
@@ -26,8 +27,18 @@ export const VerbTable = () => {
           placeholder="Search verbs... (अनियमित क्रिया खोज्नुहोस्)"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="pl-10 h-12 text-base"
+          className="pl-10 pr-10 h-12 text-base"
         />
+        {searchTerm && (
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => setSearchTerm("")}
+            className="absolute right-1 top-1/2 transform -translate-y-1/2 h-8 w-8 p-0"
+          >
+            <X className="h-4 w-4" />
+          </Button>
+        )}
       </div>
 
       <div className="rounded-lg border border-border overflow-hidden bg-card shadow-sm">
