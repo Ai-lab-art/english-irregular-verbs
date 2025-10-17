@@ -46,6 +46,7 @@ export const VerbTable = () => {
           <table className="w-full">
             <thead>
               <tr className="bg-primary text-primary-foreground">
+                <th className="px-4 py-3 text-center text-sm font-semibold">S.N.</th>
                 <th className="px-4 py-3 text-left text-sm font-semibold">V1 (Base)</th>
                 <th className="px-4 py-3 text-left text-sm font-semibold">V2 (Past)</th>
                 <th className="px-4 py-3 text-left text-sm font-semibold">V3 (P. Participle)</th>
@@ -61,6 +62,7 @@ export const VerbTable = () => {
                   key={`${verb.v1}-${index}`}
                   className="border-b border-border hover:bg-muted/50 transition-colors"
                 >
+                  <td className="px-4 py-3 text-center text-muted-foreground">{index + 1}</td>
                   <td className="px-4 py-3 font-medium text-foreground">{verb.v1}</td>
                   <td className="px-4 py-3 text-foreground">{verb.v2}</td>
                   <td className="px-4 py-3 text-foreground">{verb.v3}</td>
